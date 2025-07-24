@@ -16,12 +16,16 @@
     color: #E95A08;
 }
 
+.inter{
+    font-family: "Inter", sans-serif;
+}
+
 .button {
     padding: 10px 20px;
     background-color: #E95A08;
     color: white;
     border: none;
-    font-size: 16px;
+    font-size: 16px;  
 }
 
 /* navbar */
@@ -48,8 +52,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 200px;
-    background-color: purple;
+    margin-top: 180px;
 }
 
 .banner-left h2 {
@@ -61,6 +64,7 @@ nav {
     font-size: 22px;
     padding-top: 20px;
     height: fit-content;
+    
 }
 
 /* our plants */
@@ -69,7 +73,7 @@ nav {
     margin-top: 150px;
     font-family: "Noto Serif", serif;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
 }
 
 .our-plant h2 {
@@ -97,6 +101,10 @@ nav {
     background-color: #fff;
 }
 
+.card h3, h4 {
+    font-weight: 400; 
+}
+
 .card img {
     max-width: 100%;
     height: auto;
@@ -114,5 +122,9 @@ nav {
 .card button{
     margin-top: 10px;
 }
+
+/* flower n plants lover section  */
+
+
 
 
