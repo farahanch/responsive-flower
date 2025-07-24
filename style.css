@@ -1,5 +1,4 @@
 /* common css */
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -16,7 +15,7 @@
     color: #E95A08;
 }
 
-.inter{
+.inter {
     font-family: "Inter", sans-serif;
 }
 
@@ -25,11 +24,10 @@
     background-color: #E95A08;
     color: white;
     border: none;
-    font-size: 16px;  
+    font-size: 16px;
 }
 
 /* navbar */
-
 nav {
     display: flex;
     align-items: center;
@@ -47,7 +45,6 @@ nav {
 }
 
 /* banner */
-
 .banner-contents {
     display: flex;
     justify-content: center;
@@ -64,13 +61,11 @@ nav {
     font-size: 22px;
     padding-top: 20px;
     height: fit-content;
-    
 }
 
 /* our plants */
-
 .our-plant {
-    margin-top: 150px;
+    margin-top: 120px;
     font-family: "Noto Serif", serif;
     text-align: center;
     margin-bottom: 80px;
@@ -95,7 +90,7 @@ nav {
 }
 
 .card {
-    border: 1px solid #ddd; /*gonna remove later*/
+    border: 1px solid #ddd; 
     padding: 20px;
     text-align: center;
     background-color: #fff;
@@ -119,12 +114,108 @@ nav {
     font-size: 18px;   
 }
 
-.card button{
+.card button {
     margin-top: 10px;
 }
 
-/* flower n plants lover section  */
+/* flower n plants lover section */
+.flower-lover {
+    display: flex;
+    gap: 110px;
+    align-items: center;
+}
 
+h1 {
+    font-size: 50px;
+}
 
+.flower-lover-right ul {
+    margin-top: 20px;
+    color: #00000080;
+}
 
+/* Media Queries for Mobile Responsiveness */
 
+/* Navbar */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Navbar items */
+.nav-items {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-items a {
+    color: black;
+    text-decoration: none;
+}
+
+/* responsive starts */
+
+/* navbar- gonna do later */
+
+/* banner responsive */
+@media (max-width: 768px) {
+    .banner-contents {
+        flex-direction: column;  
+        text-align: center;
+    }
+
+    .banner-left h2 {
+        font-size: 35px;  
+    }
+
+    .banner-left p {
+        font-size: 18px;  
+    }
+
+    .banner-right img {
+        width: 100%; 
+        margin-top: 20px;
+    }
+}
+
+/* our plants responsive */
+@media (max-width: 768px) {
+    .our-plant-right {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;  
+    }
+
+    .card {
+        width: 100%;  
+        padding: 10px;  
+    }
+
+    .our-plant h2 {
+        font-size: 30px;  
+    }
+
+    .our-plant p {
+        font-size: 16px;  
+    }
+}
+
+/* flower n plants lover responsive */
+@media (max-width: 768px) {
+    .flower-lover {
+        flex-direction: column;  
+        gap: 40px;
+    }
+
+    .flower-lover-left img {
+        width: 100%;  
+    }
+
+    .flower-lover-right h1 {
+        font-size: 36px;  
+    }
+
+    .flower-lover-right ul {
+        font-size: 16px;  
+    }
+}
