@@ -1,42 +1,50 @@
 /* common css */
 
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-.container{
+.container {
     max-width: 1140px;
     margin: auto;
     font-family: "Noto Serif", serif;
 }
 
-.orange{
+.orange {
     color: #E95A08;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #E95A08;
+    color: white;
+    border: none;
+    font-size: 16px;
 }
 
 /* navbar */
 
-nav{
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.nav-items{
+.nav-items {
     display: flex;
     gap: 40px;
 }
 
-.nav-items a{
-     color: black;
-     text-decoration: none;
+.nav-items a {
+    color: black;
+    text-decoration: none;
 }
 
 /* banner */
 
-.banner-contents{
+.banner-contents {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,10 +54,65 @@ nav{
 
 .banner-left h2 {
     font-size: 65px;
+    font-weight: 700;
 }
 
-.banner-left p{
+.banner-left p {
     font-size: 22px;
     padding-top: 20px;
     height: fit-content;
 }
+
+/* our plants */
+
+.our-plant {
+    margin-top: 150px;
+    font-family: "Noto Serif", serif;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.our-plant h2 {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.our-plant p {
+    color: #00000080;
+    margin-bottom: 30px;
+}
+
+.our-plant-right {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 30px; 
+    justify-items: center; 
+}
+
+.card {
+    border: 1px solid #ddd; /*gonna remove later*/
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.card h4 {
+    font-size: 18px;   
+}
+
+.card button{
+    margin-top: 10px;
+}
+
+
