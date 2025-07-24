@@ -84,20 +84,21 @@ nav {
 
 .our-plant-right {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); 
-    gap: 30px; 
-    justify-items: center; 
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    justify-items: center;
 }
 
 .card {
-    border: 1px solid #ddd; 
+    border: 1px solid #ddd;
     padding: 20px;
     text-align: center;
     background-color: #fff;
 }
 
-.card h3, h4 {
-    font-weight: 400; 
+.card h3,
+h4 {
+    font-weight: 400;
 }
 
 .card img {
@@ -111,7 +112,7 @@ nav {
 }
 
 .card h4 {
-    font-size: 18px;   
+    font-size: 18px;
 }
 
 .card button {
@@ -134,8 +135,6 @@ h1 {
     color: #00000080;
 }
 
-/* Media Queries for Mobile Responsiveness */
-
 /* Navbar */
 nav {
     display: flex;
@@ -154,68 +153,197 @@ nav {
     text-decoration: none;
 }
 
+/* join  section */
+/* join bunch section */
+.join-bg {
+    background-image: url('./assets/news-letter-bg.png'); 
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 533px;
+    width: 100%;
+    margin: 120px auto 0;  
+}
+
+
+.join-content {
+    text-align: center;
+    color: white;
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+}
+
+.join-content h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.join-content .highlight {
+    color: #f8c146; 
+}
+
+.email-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+}
+
+.email-box input {
+    padding: 12px;
+    width: 60%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-radius: 4px 0 0 4px;
+}
+
+.email-box button {
+    padding: 12px 20px;
+    background-color: #E95A08;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+/* footer */
+.footer {
+    padding: 60px 0;
+    align-items: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px; 
+}
+
+.footer-section {
+    flex: 1; 
+}
+
+.footer-section img {
+    max-width: 150px; 
+    margin-bottom: 15px;
+}
+
+.footer-section p {
+    font-size: 22px;
+    
+    color: #00000080;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #00000080;
+    font-size: 16px;
+}
+
+.footer-connect {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start; 
+    padding-top: 35px; 
+}
+
+.connect-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* responsive starts */
 
 /* navbar- gonna do later */
 
-/* banner responsive */
+/* banner */
 @media (max-width: 768px) {
     .banner-contents {
-        flex-direction: column;  
+        flex-direction: column;
         text-align: center;
     }
 
     .banner-left h2 {
-        font-size: 35px;  
+        font-size: 35px;
     }
 
     .banner-left p {
-        font-size: 18px;  
+        font-size: 18px;
     }
 
     .banner-right img {
-        width: 100%; 
+        width: 100%;
         margin-top: 20px;
     }
 }
 
-/* our plants responsive */
+/* our plants*/
 @media (max-width: 768px) {
     .our-plant-right {
         grid-template-columns: repeat(2, 1fr);
-        gap: 20px;  
+        gap: 20px;
     }
 
     .card {
-        width: 100%;  
-        padding: 10px;  
+        width: 100%;
+        padding: 10px;
     }
 
     .our-plant h2 {
-        font-size: 30px;  
+        font-size: 30px;
     }
 
     .our-plant p {
-        font-size: 16px;  
+        font-size: 16px;
     }
 }
 
-/* flower n plants lover responsive */
+/* flower n plants*/
 @media (max-width: 768px) {
     .flower-lover {
-        flex-direction: column;  
+        flex-direction: column;
         gap: 40px;
     }
 
     .flower-lover-left img {
-        width: 100%;  
+        width: 100%;
     }
 
     .flower-lover-right h1 {
-        font-size: 36px;  
+        font-size: 36px;
     }
 
     .flower-lover-right ul {
-        font-size: 16px;  
+        font-size: 16px;
     }
 }
