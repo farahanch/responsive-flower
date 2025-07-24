@@ -34,3 +34,22 @@ nav{
      text-decoration: none;
 }
 
+/* banner */
+
+.banner-contents{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    background-color: purple;
+}
+
+.banner-left h2 {
+    font-size: 65px;
+}
+
+.banner-left p{
+    font-size: 22px;
+    padding-top: 20px;
+    height: fit-content;
+}
