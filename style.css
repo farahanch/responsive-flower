@@ -135,26 +135,82 @@ h1 {
     color: #00000080;
 }
 
-/* Navbar */
-nav {
+
+/* latest deals section */
+.latest-deals {
+    margin-top: 120px;
+    text-align: center;
+}
+
+.latest-heading {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.latest-description {
+    color: #00000080;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    font-size: 16px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.deal-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+    align-items: stretch;
+}
+
+.deal-card {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    overflow: hidden;
+    color: white;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+   
 }
 
-/* Navbar items */
-.nav-items {
-    display: flex;
-    gap: 40px;
+.deal-card.small {
+    height: 200px;
 }
 
-.nav-items a {
-    color: black;
-    text-decoration: none;
+.deal-card.large {
+    grid-row: span 2;
+    height: 100%;
+}
+
+.deal-text {
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.deal-text h2,
+.deal-text h3 {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.deal-text a {
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#zabo{
+   font-size: 40px;
+   font-weight: bold;
 }
 
 /* join  section */
-/* join bunch section */
 .join-bg {
     background-image: url('./assets/news-letter-bg.png'); 
     background-size: cover;
